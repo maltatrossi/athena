@@ -1,0 +1,66 @@
+body{
+  background-color: black;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed; /* position the container */
+  bottom: 0; /* align the container to the bottom of the screen */
+}
+
+.dice-container {
+  background-image: url("../public/images/container.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: -3px;
+}
+
+.dice-image {
+  width: 50px;
+  margin: 0 10px;
+}
+
+.roll-button-container {
+  background-image: url("../public/images/button.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin: 0 0px;
+  transition: transform 0.3s ease;
+}
+
+.roll-button-container:hover {
+  transform: translateY(5px); /* move background down on hover */
+}
+
+.roll-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  min-width: 300px;
+  height: 100%;
+}
+
+.hand-value {
+  font-family: 'Aristotelian', serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  padding-top: 100px;
+  position:absolute;
+}
